@@ -1,0 +1,51 @@
+# ❗️Common Setings
+# 숨김파일들은 일단 관리대상에서 제외시킨다.
+# 필요한 경우 예외를 둔다.
+.*
+
+#
+# Git
+#
+!.gitattributes
+!.gitignore
+!.gitmodules
+
+#
+# Log, Backup, Swap files
+#
+*.log
+*.bak
+*.sw?
+*~
+
+#
+# `.env`파일은 도커컴포즈가 사용하는 환경설정 파일이니까 무시하지 말자!!!
+#
+!/.env
+
+#
+# IntelliJ IDEA
+#
+#.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+#
+# Java
+#
+!.java-version
+
+# Gradle & Maven(Compile & Build)
+build/
+target
+bin
+*.class
+classes
+*.[oa]
+
+#
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+#
+hs_err_pid*

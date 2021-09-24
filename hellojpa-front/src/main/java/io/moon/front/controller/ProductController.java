@@ -1,4 +1,4 @@
-package io.moon.app.controller;
+package io.moon.front.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

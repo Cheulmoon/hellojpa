@@ -3,7 +3,7 @@
  */
 
 plugins {
-    id("io.moon.java-library-conventions")
+    id("library-conventions")
 }
 
 dependencies {

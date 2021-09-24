@@ -3,7 +3,7 @@
  */
 
 plugins {
-    id("io.moon.java-application-conventions")
+    id("application-conventions")
     id("org.springframework.boot")
     id("io.spring.dependency-management")
     id("io.freefair.lombok")

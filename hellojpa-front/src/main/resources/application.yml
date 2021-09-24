@@ -1,0 +1,14 @@
+#
+# FrontApp
+#
+server:
+  port: 8080
+  error:
+    whitelabel:
+      enabled: false
+
+spring:
+  config:
+    import:
+      - optional:classpath:/application-core.yml
+      - optional:classpath:/application-domain.yml

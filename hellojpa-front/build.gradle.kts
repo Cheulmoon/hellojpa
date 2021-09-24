@@ -16,7 +16,8 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-web")
 }
 
+/* application 해당 부분은 없어도 됨 */
 application {
     // Define the main class for the application.
-    mainClass.set("io.moon.app.App")
+    mainClass.set("io.moon.front.FrontApp")
 }

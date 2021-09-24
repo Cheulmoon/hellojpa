@@ -26,6 +26,8 @@ dependencies {
         implementation("org.apache.commons:commons-text:1.9")
     }
 
+    implementation("org.springframework.boot:spring-boot-starter-json")
+
     // JUnit 5 = JUnit Platform + JUnit Jupiter + JUnit Vintage
     // JUnit Platform : 테스트 프레임워크가 동작하도록 TestEngine API를 정의하는 모듈
     // JUnit Jupiter : JUnit 5에서 지원하는 새로운 기능들을 위한 모듈

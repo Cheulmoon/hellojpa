@@ -10,12 +10,16 @@ import static io.moon.utilities.StringUtils.split;
 import static io.moon.app.MessageUtils.getMessage;
 
 import org.apache.commons.text.WordUtils;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+@SpringBootApplication
 public class App {
     public static void main(String[] args) {
         LinkedList tokens;
         tokens = split(getMessage());
         String result = join(tokens);
+        SpringApplication.run(App.class, args);
         System.out.println(WordUtils.capitalize(result));
     }
 }

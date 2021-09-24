@@ -7,6 +7,14 @@ plugins {
     java
 }
 
+val projectGroup: String by project
+val projectVersion: String by project
+
+group = projectGroup
+version = projectVersion
+java.sourceCompatibility = JavaVersion.VERSION_15
+java.targetCompatibility = JavaVersion.VERSION_15
+
 repositories {
     // Use Maven Central for resolving dependencies.
     mavenCentral()

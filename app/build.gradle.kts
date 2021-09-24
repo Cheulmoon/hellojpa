@@ -4,11 +4,16 @@
 
 plugins {
     id("io.moon.java-application-conventions")
+    id("org.springframework.boot")
+    id("io.spring.dependency-management")
+    id("io.freefair.lombok")
 }
 
 dependencies {
     implementation("org.apache.commons:commons-text")
     implementation(project(":utilities"))
+
+    implementation("org.springframework.boot:spring-boot-starter-web")
 }
 
 application {

@@ -25,6 +25,6 @@ pluginManagement {
 
 rootProject.name = "hellojpa"
 
-include("app")
-include("list")
-include("utilities")
+include("hellojpa-front")
+include("hellojpa-core")
+include("hellojpa-domain")

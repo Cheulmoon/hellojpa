@@ -11,7 +11,7 @@ plugins {
 
 dependencies {
     implementation("org.apache.commons:commons-text")
-    implementation(project(":utilities"))
+    implementation(project(":hellojpa-domain"))
 
     implementation("org.springframework.boot:spring-boot-starter-web")
 }

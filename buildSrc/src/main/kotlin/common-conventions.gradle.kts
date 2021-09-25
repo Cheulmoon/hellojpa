@@ -5,6 +5,7 @@
 plugins {
     // Apply the java Plugin to add support for Java.
     java
+    id("idea")
 }
 
 val projectGroup: String by project
@@ -36,6 +37,20 @@ dependencies {
         // 5버전만 사용하자. 헤깔리니까. JUnit 4 모듈은 제외하도록하자.
         exclude(group = "org.junit.vintage", module = "junit-vintage-engine")
     }
+}
+
+// https://docs.gradle.org/current/dsl/org.gradle.plugins.ide.idea.model.IdeaModule.html
+idea {
+    module.isDownloadJavadoc = true
+    module.isDownloadSources = true
+}
+
+// https://docs.gradle.org/current/dsl/org.gradle.api.tasks.compile.JavaCompile.html
+// https://docs.gradle.org/current/dsl/org.gradle.api.tasks.compile.CompileOptions.html
+//  -Xlint:unchecked:   Shows information about unchecked or unsafe operations.
+//  -Xlint:deprecation: Shows information about deprecated members.
+tasks.withType<JavaCompile>() {
+    options.compilerArgs.addAll(arrayOf("-Xlint:unchecked", "-Xlint:deprecation"))
 }
 
 tasks.test {
